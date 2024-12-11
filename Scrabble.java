@@ -116,11 +116,13 @@ public class Scrabble {
 				} else {
 					if (!isWordInDictionary(input)) {
 						System.out.println("No such word in the dictionary. Try again.");
+						System.out.println(""); 
 					} else {
 						int wordScore = wordScore(input); 
 						score += wordScore; 
 						hand = MyString.remove(hand, input); 
-						System.out.println(input + " earned " + wordScore + " points. Score: " + score + " points."); 
+						System.out.println(input + " earned " + wordScore + " points. Score: " + score + " points.");
+						System.out.println(""); 
 					}
 				}
 			}
@@ -129,6 +131,7 @@ public class Scrabble {
 	        System.out.println("Ran out of letters. Total score: " + score + " points");
 		} else {
 			System.out.println("End of hand. Total score: " + score + " points");
+			System.out.println(""); 
 		}
 	}
 
@@ -163,8 +166,8 @@ public class Scrabble {
 		////testBuildingTheDictionary();  
 		///testScrabbleScore();    
 		////testCreateHands();  
-		testPlayHands();
-		///playGame();
+		///testPlayHands();
+		playGame();
 	}
 
 	public static void testBuildingTheDictionary() {
