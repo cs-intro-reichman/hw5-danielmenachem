@@ -70,7 +70,7 @@ public class Scrabble {
 		if (word.length() == HAND_SIZE) {
 			score += 50; 
 		}
-		if (MyString.subsetOf(word, "runi")) {
+		if (MyString.subsetOf("runi", word)) {
 			score += 1000; 
 		}
 		return score;
@@ -161,9 +161,9 @@ public class Scrabble {
 	public static void main(String[] args) {
 		//// Uncomment the test you want to run
 		////testBuildingTheDictionary();  
-		////testScrabbleScore();    
+		///testScrabbleScore();    
 		////testCreateHands();  
-		////testPlayHands();
+		testPlayHands();
 		///playGame();
 	}
 
@@ -190,7 +190,7 @@ public class Scrabble {
 	}
 	public static void testPlayHands() {
 		init();
-	    //playHand("ocostrza");
+	    ///playHand("ocostrza");
 		//playHand("arbffip");
 		//playHand("aretiin");
 	}
