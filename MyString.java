@@ -90,7 +90,7 @@ public class MyString {
         String output = ""; 
         String selectionOfChars = "abcdefghijklmnopqrstuvwxyz"; 
         for (int i = 0; i < n; i++) {
-            int index = (int) (Math.random() * 27); 
+            int index = (int) (Math.random() * 26); 
             output += selectionOfChars.charAt(index); 
         }
         return output;
